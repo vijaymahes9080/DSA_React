@@ -43,6 +43,7 @@ function App() {
         setDark(true);
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   //to update progress in '/' route and also update DB

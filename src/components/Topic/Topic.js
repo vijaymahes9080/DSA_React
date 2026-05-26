@@ -165,6 +165,7 @@ export default function Topic({ data, updateData }) {
 			setTopicName(data.topicName);
 			setSelected(doneQuestion);
 		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [data]);
 
 	//tooltip functions
@@ -267,7 +268,7 @@ export default function Topic({ data, updateData }) {
 									Sorter(isBookmarkSortFilterSelected);
 								}}
 							>
-								<span className='label-emoji'>🏷️</span>
+								<span className='label-emoji' role='img' aria-label='label'>🏷️</span>
 							</Button>
 						</OverlayTrigger>
 					</InputGroup>
